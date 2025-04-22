@@ -37,10 +37,10 @@ class myForm(cName) of FORM(cName)
   endwith
   
   this.MainMenu = new TMainMenu(this)
+  this.MainMenu.Create()
   
   function FormOnSize
-    this.MainMenu.Position := MainMenuBottom
-    this.MainMenu.Width := form.Width
+    this.MainMenu.Invalidate()
   return
 
 endclass

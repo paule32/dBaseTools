@@ -18,3 +18,13 @@
 // CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
 // OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // ---------------------------------------------------------------------------------------
+#ifndef __DBASE_Controls_H__
+#define __DBASE_Controls_H__
+#pragma once
+
+#define MainMenuTop    0
+#define MainMenuBottom 1
+
+#define MainMenuHeight 38
+
+#endif  // __DBASE_Controls_H__
