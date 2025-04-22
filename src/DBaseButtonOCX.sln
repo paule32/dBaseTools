@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBaseButtonOCX", "DBaseButtonOCX.csproj", "{FC6A580B-CA2E-4068-9AD3-B64CB4001D9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC6A580B-CA2E-4068-9AD3-B64CB4001D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC6A580B-CA2E-4068-9AD3-B64CB4001D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC6A580B-CA2E-4068-9AD3-B64CB4001D9C}.Debug|x86.ActiveCfg = Debug|x86
+		{FC6A580B-CA2E-4068-9AD3-B64CB4001D9C}.Debug|x86.Build.0 = Debug|x86
+		{FC6A580B-CA2E-4068-9AD3-B64CB4001D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC6A580B-CA2E-4068-9AD3-B64CB4001D9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC6A580B-CA2E-4068-9AD3-B64CB4001D9C}.Release|x86.ActiveCfg = Release|x86
+		{FC6A580B-CA2E-4068-9AD3-B64CB4001D9C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70A010B5-C9CC-4670-A53E-ABA213387F5E}
+	EndGlobalSection
+EndGlobal

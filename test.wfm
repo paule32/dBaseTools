@@ -1,0 +1,94 @@
+** END HEADER -- Diese Zeile nicht entfernen
+//
+// Erstellt am 22.04.2025
+//
+parameter bModal
+local f
+f = new testForm()
+if (bModal)
+   f.mdi = false // Nicht-MDI festlegen
+   f.ReadModal()
+else
+   f.Open()
+endif
+
+class testForm of FORM
+   set procedure to MyCustomButton.cc additive
+   with (this)
+      onOpen = class::FORM_ONOPEN
+      height = 16.0
+      left = 12.7143
+      top = 6.7727
+      width = 40.0
+      text = ""
+   endwith
+
+   this.BUTTONXCONTROL1 = new ACTIVEX(this)
+   with (this.BUTTONXCONTROL1)
+      height = 4.0
+      left = 6.0
+      top = 2.0
+      width = 27.0
+      license = "{8A1DBCC7-7EA6-4396-B39D-39BC5EA55DCA}"
+      state = "GFGBFHEBBIGFFDIGIFIFHQHPBBBFFNHGHHIFBDBBBEGFHQIBBDBBBGGIHKHFIFHJBEMKBBBHFJHGHKHIHJIFBDGFBIFEHCIBIFHKHQHPBHBGHFHFHFHFHFBBBB"
+      classId = "{36AC56B2-A669-4FDE-B000-05C39818E68A}"
+   endwith
+
+   with (this.BUTTONXCONTROL1.nativeObject)
+      OnClick = class::NATIVEOBJECT_ONCLICK
+   endwith
+
+   this.PUSHBUTTON1 = new PUSHBUTTON(this)
+   with (this.PUSHBUTTON1)
+      height = 3.0
+      left = 6.0
+      top = 6.5
+      width = 29.0
+      text = "Pushbutton1"
+      dragEffect = 1	// Kopieren
+   endwith
+
+   this.MYCUSTOMBUTTON1 = new MYCUSTOMBUTTON(this)
+   with (this.MYCUSTOMBUTTON1)
+      height = 3.0
+      left = 4.0
+      top = 11.0
+      width = 25.0
+   endwith
+
+   this.COMBOBOX1 = new COMBOBOX(this)
+   with (this.COMBOBOX1)
+      height = 1.0
+      left = 4.0
+      top = 0.5
+      width = 20.0
+      colorNormal = "0x80ffff/Window"
+      colorHighLight = "Navy/W*"
+      dataSource = 'array {"TestFeld1","test2"}'
+      style = 1	// Dropdown
+   endwith
+
+   this.ACTIVEX1 = new ACTIVEX(this)
+   with (this.ACTIVEX1)
+      height = 11.7727
+      left = 9.0
+      top = 1.5
+      width = 26.4286
+      license = "{8A1DBCC7-7EA6-4396-B39D-39BC5EA55DCA}"
+      l0 = "GFGBFHEBBIGFFDIGIFIFHQHPBBBFFNHGHHIFBDBBBEGFHQIBBDBBBGGIHKHFIFHJBEMGBBBHFJHGHKHIHJIFBEQQBBBIFEHCIBIFHKHQHPBHBIIDHGIIHGIDIIHGBNFHHQHPIFDPFEHJHCIDIEHGIFBIBNFCFPGEFKGQFEFJFCGDGEFGGFBLFHHQHPIFDPFEHQHNHQIDBIBIHEHNFDHNHCHEHMBMFHHQHPIFDPFJHGHKHIHJIFBDOMBKFHHQHPIF"
+      l0 += "DPFPHCHOHGBHBGFCIDHKHCHNBLFHHQHPIFDPGEIFIKHNHGBMBBBLGBHCIDHGHPIFFHHQHPIFBJBBBB"
+      state = l0
+      classId = "{36AC56B2-A669-4FDE-B000-05C39818E68A}"
+   endwith
+
+
+   function form_onOpen()
+
+      return
+
+   function nativeObject_OnClick()
+      ? "clicker"
+      return
+
+endclass
+

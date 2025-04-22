@@ -1,0 +1,89 @@
+#include <WINDEF.H>
+#define HWND CHANDLE
+#define WM_QUIT      VAL("0x0012")
+#define PM_REMOVE 1
+
+extern BOOL        PeekMessage(LPSTRUCTURE, HWND, UINT, UINT, UINT) user32 from "PeekMessageA"
+extern BOOL        TranslateMessage(CPTR) user32
+extern LONG        DispatchMessage(CPTR) user32 from "DispatchMessageA"
+extern LRESULT     SendMessage(HWND, UINT, WPARAM, LPARAM) user32 from "SendMessageA"
+
+clear
+
+public running, runmsg
+running = False
+runmsg = new TMsg(0,0,0,0,0,0,0)
+
+** END HEADER -- Diese Zeile nicht entfernen
+//
+// Erstellt am 18.02.2025
+//
+parameter bModal
+local f
+f = new loopForm()
+if (bModal)
+   f.mdi = false // Nicht-MDI festlegen
+   f.ReadModal()
+else
+   f.Open()
+endif
+
+class loopForm of FORM
+   with (this)
+      onClose = class::FORM_ONCLOSE
+      height = 10.8182
+      left = 7.7143
+      top = 13.3182
+      width = 61.7143
+      text = ""
+   endwith
+
+   this.PUSHBUTTON1 = new PUSHBUTTON(this)
+   with (this.PUSHBUTTON1)
+      onClick = class::PUSHBUTTON1_ONCLICK
+      height = 2.0
+      left = 10.0
+      top = 5.0
+      width = 17.0
+      text = "Pushbutton1"
+   endwith
+
+
+	procedure ProgramLoop
+		running = True
+		do while running
+			do while PeekMessage(runmsg, 0, 0, 0, PM_REMOVE)
+				if runmsg.message == WM_QUIT
+					running = False
+			   else
+					TranslateMessage(runmsg)
+					DispatchMessage(runmsg)
+				endif
+			enddo
+			? "sssss"
+			sleep(1)
+		enddo
+	return
+
+	function PUSHBUTTON1_onClick()
+		class::ProgramLoop()
+   return
+
+   function form_onClose()
+//		runmsg.message = WM_QUIT
+		running = False
+      clear memory
+   return
+
+endclass
+
+class TMsg(_hwnd,_message,_wp,_lp,_t,_x,_y) of String
+	hwnd		= _hwnd
+	message	= _message
+	wParam	= _wp
+	lParam	= _lp
+	time		= _t
+	ptX		= _x
+	ptY		= _y
+endclass
+

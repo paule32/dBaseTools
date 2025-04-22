@@ -1,0 +1,120 @@
+Project File generated 21.04.2025 22:04:32
+
+[Project]
+Name=TestProject
+DefaultDir=.
+MainProjectFileName=TControl.prg
+Parameters=
+Author=
+Description=
+Preprocessor=
+LogFileName=C:\Users\Jens Kallup\AppData\Local\Programme\dBASE\dBASE2019\Projekte\test1\testProject.log
+PrefPathFormat=R
+TargetFileName=C:\Users\Jens Kallup\AppData\Local\Programme\dBASE\dBASE2019\Projekte\test1\TestProject.exe
+IconFileName=
+SplashFileName=
+MostRecentSelectedFileName=
+WebApplication=false
+DeoOption=False
+enableUAC=0
+inioption=1
+runtimeinbuild=1
+bdeoption=0
+
+[Contents]
+TControl.prg,0,0,0, 
+PlusR_DE.dll,0,0,0, 
+T:\b\dBaseCOM\DBaseButtonOCX\bin\x86\Debug\DBaseButtonOCX.dll,0,0,0, 
+T:\b\dBaseCOM\DBaseButtonOCX\bin\x86\Debug\DBaseButtonOCX.tlb,0,0,0, 
+
+[DEO]
+
+[INNO]
+ProjectExeFileName=C:\Users\Jens Kallup\AppData\Local\Programme\dBASE\dBASE2019\Projekte\test1\TestProject.exe
+ProjectMainFileName=
+ProjectdBaseVersion=dBASE 2019 13.20  b2618 (11/26/2019-DE191126)
+DefaultDirName={pf}\{#AppName}
+AppName=TestProject
+AppVersion=1.0.0.0
+SM_dBASERuntime=false
+dBPlus=true
+dBSeparat=false
+Resource=false
+dBASELang=DE
+dBaseRuntimeInstDir=
+dBaseRuntimeDir=T:\Programme\dBASE\dBASE2019\Runtime
+INNO_RBoption=3
+bdeonlyinstall=false
+bdeinstallfile=
+XPLook=false
+dBaseBuild=2618
+dBaseVersion=1320
+SetupLang=de
+SepDestDir=false
+BDEGroupEntries=false
+dBProgressbar=false
+dBProgressbox=false
+dBSilent=false
+dBDestRuntime=
+dBDestBDE=
+SourceFolder=C:\Users\Jens Kallup\AppData\Local\Programme\dBASE\dBASE2019\Projekte\test1
+InnoScriptname=
+LastDBVersion=1320
+LastDBLanguage=DE
+LastCreateDate=
+IncDispGroup=true
+IncUninsEntry=true
+IncDesktopEntry=false
+IncQuickEntry=false
+ENLicense=
+ENBefore=
+ENAfter=
+DELicense=
+DEBefore=
+DEAfter=
+ESLicense=
+ESBefore=
+ESAfter=
+ITLicense=
+ITBefore=
+ITAfter=
+JALicense=
+JABefore=
+JAAfter=
+FRLicense=
+FRBefore=
+FRAfter=
+DKLicense=
+DKBefore=
+DKAfter=
+PLLicense=
+PLBefore=
+PLAfter=
+NLLicense=
+NLBefore=
+NLAfter=
+UninsHS=true
+UninsHSAppName=TestProject
+UninsHSAppId=
+UninsHSLanguages=All
+BDEUseSettings=false
+BDEMaxFileHandle=255
+BDELangDriver='ascii' ANSI
+BDELevel=7
+BDEMemoBlockSize=1024
+BDEMDXBlockSize=1024
+INNOINI=true
+INIERRORHANDLING=false
+INITRAP=true
+ININOBDE=true
+INIAPPTHEMETYPE=4
+INIFULLTHEMENAME=4 - Office2 Blue
+INILARGEBUTTONS=true
+UACRB=1
+CURRENTVSF=windows
+IMAGETOPRIGHT=
+IMAGESIDE=
+Icon1={group}\{#AppName} >> {app}\C:\Users\Jens Kallup\AppData\Local\Programme\dBASE\dBASE2019\Projekte\test1\TestProject.exe
+Files1=PlusR_DE.dll >> DestDir: {app}
+Files2=T:\b\dBaseCOM\DBaseButtonOCX\bin\x86\Debug\DBaseButtonOCX.dll >> DestDir: {app}
+Files3=T:\b\dBaseCOM\DBaseButtonOCX\bin\x86\Debug\DBaseButtonOCX.tlb >> DestDir: {app}
